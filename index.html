@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PupTone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Amita&family=Babylonica&family=Dancing+Script&family=Explora&family=Fredericka+the+Great&family=Freehand&family=Great+Vibes&family=Itim&family=Josefin+Sans:ital,wght@0,700;1,300;1,500&family=Julee&family=Marck+Script&family=Monoton&family=Montserrat&family=Open+Sans&family=Poppins&family=Rampart+One&family=Roboto+Mono&family=Sacramento&family=Sassy+Frass&family=Shadows+Into+Light&family=Sigmar&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pets.css">
+</head>
+<body>
+    <div class="container-fluid main-container">
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> 
+                <i class="fa-solid fa-shield-dog fa-bounce fa-2x"></i><span class="puptone">PupTone</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html" target="_blank">About</a>
+                  </li>                                
+                </ul>
+                <form class="d-flex">
+                  <input id="searchBox" class="form-control me-2" type="text" placeholder="Search dogs" aria-label="Search">
+                  <button onclick="search()" class="btn btn-outline-warning" type="button">Search</button>
+                </form>
+               
+              </div>
+            </div>
+          </nav> 
+          <div  id="output" class="container-fluid"></div>
+          <div class="body">
+
+<div class="row image">
+  <div class="col-md-6">
+  <img src="images/doggyyyy.png" alt="">
+  </div>
+ <div class="col-md-6"> 
+  <div class="front">
+    <h1>pets that all we need <i class="fa-solid fa-paw"></i> </h1>
+    <a href="">Get now!</a>
+  </div>
+</div>
+ 
+</div>
+</div>
+
+<div class="row mt-5 " id="types">
+  <h1>Types of Dogs</h1>
+ <div class="col-md-4 col-lg-2">
+  <div class="card text-bg-light rounded-circle border border-warning w-70">
+    <img src="images/retreiver_line.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+     
+    </div>
+  </div>
+  <p class="card-text">Golden Retriever</p>
+ </div>
+
+  <div class="col-md-4 col-lg-2">
+    <div class="card text-bg-light rounded-circle border border-warning w-70">
+      <img src="images/bull_line.png" class="card-img" alt="bulldog">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+    <p class="card-text text-center">English Bull Dog</p>
+
+  </div>
+
+ <div class="col-md-4 col-lg-2">
+    <div class="card text-bg-light rounded-circle border border-warning w-70">
+      <img src="images/poodle_line.png" class="card-img" alt="poodle">
+      <div class="card-img-overlay">
+      </div>
+    </div>
+    <p class="card-text">Poodle(Pudel)</p>
+
+ </div>
+ <div class="col-md-4 col-lg-2">
+  <div class="card text-bg-light rounded-circle border border-warning w-70">
+    <img src="images/terrier_line.png" class="card-img" alt="Airedale Terrier">
+    <div class="card-img-overlay">
+    </div>
+  </div>
+  <p class="card-text">Airedale Terrier </p>
+
+</div>
+<div class="col-md-4 col-lg-2">
+  <div class="card text-bg-light rounded-circle border border-warning w-70">
+    <img src="images/husky_line.png" class="card-img" alt="huski">
+    <div class="card-img-overlay">
+    </div>
+  </div>
+  <p class="card-text">Siberian Huski</p>
+
+</div>
+<div class="col-md-4 col-lg-2">
+  <div class="card text-bg-light rounded-circle border border-warning w-70">
+    <img src="images/hound_line.png" class="card-img" alt="Afghan Hound">
+    <div class="card-img-overlay">
+    </div>
+  </div>
+  <p class="card-text">Afghan Hound</p>
+
+</div>
+</div>
+<!-- <div id="quote">
+  <div class="row ">
+    <div class="col-md-6  quotes">
+<h1>“Dogs do speak, but only to those who know how to listen.”</h1>
+    </div>
+    <div class="col-md-6  ">
+      <img src="images/nicholas-brownlow-lx_KwA7hlLU-unsplash-removebg-preview.png" alt="puppy">
+    </div>
+ 
+  </div>
+
+</div> -->
+
+<div id="quote">
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="text-div">
+        <h1>“Dogs do speak, but only to those who know how to listen.”</h1>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="image-div">
+
+        <img src="images/girl_with_dog.png" alt="puppy">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="pop-heading"><h1>Popular Dogs</h1></div>  
+<div class="main-scroll-div container">
+
+  <div>
+    <button class="icon" onclick="scrolll()"><i class="fa-solid fa-paw fa-beat-fade fa-xl"></i>
+    </button>
+
+  </div>
+  <div class="cover">
+    <div class="scroll-images">
+      <div onclick="kabab()" class="child">
+       
+        <img class="child-img" src="images/golden_retreiver.png" alt="">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">Golden Retriever</h1>
+          <p style="font-weight: bold;">The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat.</p>
+        </div>
+      </div>
+      <div onclick="randang()" class="child">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">Labrador</h1>
+          <P style="font-weight: bold;">The Labrador Retriever or simply Labrador, is a British breed of retriever gun dog.The Labrador is friendly, energetic, and playful.</P>
+        </div>
+        <img class="child-img" src="images/lab.png" alt="">
+      </div>
+      <div onclick="muttanbiriyani()" class="child">
+      
+        <img class="child-img" src="images/beagle.png" alt="">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll" style=" font-family: 'Squada One', cursive;">Beagle</h1>
+          <p style="font-weight: bold;">The beagle is a breed of small scent hound, similar in appearance to the much larger foxhound. The beagle was developed primarily for hunting hare, known as beagling.</p>
+        </div>
+      </div>
+      <div onclick="randang()" class="child">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">Poodle</h1>
+          <P style="font-weight: bold;">The Poodle, called the Pudel in German and the Caniche in French, is a breed of water dog. The breed is divided into four varieties based on size, the Standard Poodle, Medium Poodle, Miniature Poodle and Toy Poodle, although the Medium Poodle is not universally recognised.</P>
+        </div>
+        <img class="child-img" src="images/poodle-removebg-preview.png" alt="">
+      </div>
+      <div onclick="randang()" class="child">
+       
+        <img class="child-img" src="images/german_shepherd.png" alt="">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">German Shepherd</h1>
+          <P style="font-weight: bold;">The German Shepherd is a German breed of working dog of medium to large size.It has since been used in many other types of work, including disability assistance, search-and-rescue, police work, and warfare.</P>
+        </div>
+      </div>
+      <div onclick="randang()" class="child">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;"> Rottweiler </h1>
+          <P style="font-weight: bold;">The Rottweiler is a breed of domestic dog, regarded as medium-to-large or large.They are well known to be powerful, protective, and loyal, famous for their instinct for guarding.</P>
+        </div>
+        <img class="child-img" src="images/rottweiler.png" alt="">
+      </div>
+      <div onclick="randang()" class="child">
+       
+        <img class="child-img" src="images/doberman.png" alt="">
+        <div style="padding-left: 10px;">
+          <h1 id="mainheadscroll"  style=" font-family: 'Squada One', cursive;">Doberman</h1>
+          <P style="font-weight: bold;">They're highly energetic and smart dogs who perform well in police and military work, canine sports, and as family guardians and companions.</P>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button onclick="scrollr()" class="icon"> <i class="fa-solid fa-paw fa-beat-fade fa-xl"></i></button>
+  </div>
+</div>
+
+   <div class="service">
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8 border inner">
+<h3>Want to know more about dogs?</h3>
+<button><a href="">Know more</a></button>
+  </div>
+  <div class="col-2"></div>
+</div>
+   </div>   
+   <div class="things">
+    <h1>Things you must know</h1>
+  <div class="row ">
+    <div class="col-lg cards">
+      <div class="card" >
+        <img src="https://www.clker.com/cliparts/J/b/u/w/Q/r/cartoon-bone.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Food and water</h5>
+          <p class="card-text">Pets need healthy food.Give your pets 24/7 access to fresh drinking water.</p>
+          <a href="care.html" target="_blank" class="btn btn-warning">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg cards">
+      <div class="card" >
+        <img src="https://t4.ftcdn.net/jpg/01/65/37/45/360_F_165374504_cHm4jVvVqCfxu7gKEGS1LoKzOOSpbFa4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shelter&Protection</h5>
+          <p class="card-text">Proper pet care includes providing a safe, cozy shelter. Pets need to go to the bathroom regularly.</p>
+          <a href="care.html" target="_blank" class="btn btn-warning">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg cards">
+      <div class="card" >
+        <img src="https://static.vecteezy.com/system/resources/previews/018/881/894/original/doctors-stethoscope-tool-in-cartoon-style-free-vector.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Exercise and Doctor visit </h5>
+          <p class="card-text">Make sure that your pet gets regular exercise.Pets require doctor visits and healthy habits.</p>
+          <a href="care.html" target="_blank" class="btn btn-warning">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   </div> 
+
+<footer>
+  <div class="row footer">
+   
+    <div class="col-md-3 address">
+   
+      <ul>
+        <li>Get in touch</li>
+        <li>Philipps petstore-Marburg</li>
+        <li>Beigenstabe-10</li>
+        <li>212-5967</li>
+        <li>Marburg-Cl</li>
+      </ul>
+    </div>
+    <div class="col-md-3 srch">
+  
+      <ul>
+        <li>Sign up for our weekly newsletter</li>
+        <li> <form class="d-flex">
+          <input id="finalEmail" class="form-control me-2" type="text" placeholder="Enter your Email" aria-label="Search">
+          <button onclick="setEmail()" class="btn btn-outline-dark" type="button">Submit</button>
+        </form></li>
+       
+      </ul>
+    </div>
+    <div class="col-md-3 socials">
+     <ul> <li >Social Links</li></ul>
+      <ul class="social d-flex">
+       
+        <li><a href="#"><i class="fa-brands fa-youtube fa-shake fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram fa-shake fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter fa-shake fa-2x"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 support">
+     
+      <ul>
+        <li>support</li>
+        <li><a href="contact.html" target="_blank">Contact us</a>
+        </li> 
+        <li>FAQ</li>
+        <li>Marketing Enquiries</li>
+        <li>puptone@yahoo.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div>
+  <p class="copyright">
+    &copy; PupTone website 2023, all rights reserved &reg; Nikhila Sabu
+  </p>
+</div>
+
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+<script>
+
+
+  function scrolll() {
+    left = document.querySelector(".scroll-images");
+    left.scrollBy(-1190, 0)
+  }
+
+  function scrollr() {
+    right = document.querySelector(".scroll-images");
+    right.scrollBy(1190, 0)
+  }
+</script>
+
+<script>
+  async function search() {
+
+   let dogName = searchBox.value
+    if (dogName) {
+  const dogDetails = await fetch('https://api.api-ninjas.com/v1/dogs?name= ' + dogName, { headers: { 'X-API-Key': 'AnIKqN/o5CKdoxr80U3Rng==RzctRApSQTOGFoaf' } });
+  const data = await dogDetails.json().then((res)=> {
+    
+    for(let result of res ){
+      html = `
+     <div class="dogs">
+      <i id="icon" class="fa-solid fa-bone fa-fade fa-2x"></i>
+      <div class="card">
+  <img src="${result.image_link}" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <h5 id="name" class="card-title">${result.name}</h5>
+    <h5 class="card-title">Energy:${result.energy}/5</h5>
+    <h5 class="card-title">Playfulness:${result.playfulness}/5</h5>
+    <h5 class="card-title">Good with children:${result.good_with_children}/5</h5>
+    <h5 class="card-title">Barking:${result.barking}/5</h5>
+    <h5 class="card-title">Minimum life expectancy:${result.min_life_expectancy} Years</h5>
+    <h5 class="card-title">Maximum life expectancy:${result.max_life_expectancy} Years</h5>
+   
+  </div>
+</div>
+</div>
+      `
+    }
+    output.innerHTML = html
+  })
+
+    }
+  else{
+    alert('Please enter valid Dog name')
+  }
+}
+</script>
+
+<script>
+  function setEmail(){
+
+    if(finalEmail.value){
+    alert("Thanks for being a part")
+    window.location="index.html"}
+    else{}
+  }
+</script>
+</html>

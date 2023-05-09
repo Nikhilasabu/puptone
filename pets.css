@@ -1,0 +1,772 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.navbar-brand span {
+  font-family: 'Rampart One', cursive;
+  color: rgb(190, 190, 22);
+  font-size: 35px;
+}
+
+.body {
+
+  background-image: linear-gradient(315deg, #fb683c 0%, #f0491f 74%);
+  position: relative;
+}
+
+.image img {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+  width: 200px;
+}
+
+.front {
+  margin-top: 200px;
+  padding-bottom: 100px;
+}
+
+.body h1 {
+  font-family: 'Sigmar', cursive;
+  /* margin-top: 200px; */
+  font-weight: 600;
+  font-size: 50px;
+  /* padding-bottom: 100px; */
+}
+
+.body a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+
+#types .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#types .col-lg-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#types .card {
+  height: 200px;
+  margin-top: 30px;
+  width: 200px;
+
+}
+#types .col-md-4 p,#types .col-lg-2 p{
+  margin: 15px 0 0;
+}
+#types .card-img {
+  height: 100%;
+  margin-top: 0;
+  width: 100%;
+  padding: 30px;
+}
+
+/* #types .card{
+    height: 150px;
+    margin-top: 30px;
+}
+#types .card-img{
+    height:100px;
+    margin-top: 20px;
+} */
+#types h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#icon {
+  margin-left: 250px;
+  margin-bottom: 10px;
+
+}
+
+#name {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#output {
+  padding: 0px 500px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  background-image: url('images/pxfuel\ \(2\).jpg');
+  background-attachment: fixed;
+}
+
+.dogs .card {
+  border-width: 8px;
+  border-color: rgb(106, 88, 64);
+  width: 35rem;
+}
+
+#quote h1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding: 205px 75px;
+  margin-left: 100px;
+  font-family: 'Marck Script', cursive;
+}
+
+#quote img {
+
+  /* margin-left: 200px; */
+
+  margin: 130px 0 0 200px;
+}
+
+.pop-heading h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main-scroll-div {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover {
+  width: 90%;
+  height: 50%;
+}
+
+.scroll-images {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+
+  scroll-behavior: smooth;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: aquamarine;
+}
+
+.scroll-images::-webkit-scrollbar {
+  color: transparent;
+}
+
+.child {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 450px;
+  margin: 1px 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.child-img {
+  width: 40%;
+  height: 100%;
+}
+
+.icon {
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  color: orange;
+}
+
+.icon:hover {
+  color: black;
+}
+
+.about-dog {
+  background: url('images/pxfuel\ \(1\).jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(133, 110, 80);
+  color: black;
+
+}
+
+.homebtn {
+  border-color: #fb683c;
+
+  margin-left: 1000px;
+  padding: 2px 15px;
+  border-radius: 5px;
+  /* background-color: #fba8a4;
+background-image: linear-gradient(315deg, #fba8a4 0%, #e9e5f5 74%); */
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d8896b 74%);
+  color: white;
+}
+
+.homebtn:hover {
+  background-color: rgb(253, 253, 29);
+
+}
+
+.contact-us {
+  background: url('https://img.freepik.com/premium-vector/cute-many-head-dog-animal-seamless-pattern-wallpaper-with-design-chocolate_561841-1229.jpg?w=2000')no-repeat;
+  background-attachment: fix;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-weight: 400px;
+}
+
+.service {
+  margin-top: 55px;
+
+}
+
+.inner {
+  background: url('https://i.pinimg.com/736x/aa/69/ab/aa69ab4b4ee23190e7c8a2fe6ef74658.jpg');
+  height: 250px;
+}
+
+.service h3 {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.service button {
+  border-color: #f0491f;
+  border-radius: 5px;
+  padding: 10px 45px;
+  margin-left: 350px;
+  margin-top: 15px;
+}
+
+.service button:hover {
+  background-color: peru;
+}
+
+.service button a {
+  text-decoration: none;
+  color: black;
+}
+
+.things {
+  margin-top: 40px;
+
+
+}
+
+.things h1 {
+  text-align: center;
+}
+
+.things .cards {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.things .card {
+
+  width: 18rem;
+}
+
+.things .card img {
+  height: 300px;
+}
+
+.care {
+  background: url('https://images.hdqwalls.com/wallpapers/dog-minimalism-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.footer {
+  margin-top: 55px;
+  background-color: rgb(223, 167, 146);
+  height: 250px;
+  line-height: 40px;
+  color: black;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.social li {
+  padding: 15px 10px;
+}
+
+.address {
+  margin-top: 40px;
+}
+
+.srch {
+  margin-top: 40px;
+}
+
+.srch form {
+  margin-top: 20px;
+}
+
+.socials {
+  margin-top: 40px;
+}
+
+.socials i {
+  color: #fb683c;
+}
+
+.support {
+  margin-top: 40px;
+}
+
+.support a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+@media (max-width: 1199.98px) { 
+  .image img{
+    left: 70px;
+  }
+  #types .card {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 991.98px) { 
+  .image img{
+    left: 70px;
+  }
+  #types .card {
+    height: 120px;
+    width: 120px;
+  }
+  #quote h1{
+    padding: 125px 15px;margin-left: 50px;
+  }
+  #quote img{
+    margin: 130px 0 0 40px;width: 270px;
+  }
+
+}
+
+
+
+@media (max-width: 767.98px) {
+  .main-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px 0px;
+  }
+
+  .navbar-brand span {
+    font-family: 'Rampart One', cursive;
+    color: rgb(190, 190, 22);
+    font-size: 35px;
+  }
+
+  #output {
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* background-image: url('images/pxfuel\ \(2\).jpg'); */
+    /* background-attachment: fixed; */
+  }
+
+  .dogs .card {
+    border-width: 8px;
+    border-color: rgb(106, 88, 64);
+    /* width: 200px; */
+
+    width: 20rem;
+
+  }
+
+  #icon {
+    margin-left: 140px;
+    margin-bottom: 10px;
+
+  }
+
+  .image img {
+    width: auto;
+    margin-right: 0;
+    margin-top: 30px;
+    position: relative;
+    left: inherit;
+    bottom: inherit;
+    height: 160px;
+    padding: 0px 0 0 10px;
+    }
+
+  .body {
+    height: auto;
+    background-image: linear-gradient(315deg, #fb683c 0%, #f0491f 74%);
+    position: relative;
+  }
+
+  .body h1 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .front {
+    margin-top: 0;
+    padding: 25px 25px 40px;
+  }
+
+  .body a {
+    font-size: 20px;
+  }
+
+  #types {
+    margin-top: 45px;
+  }
+
+  #types h1 {
+    font-size: 20px;
+  }
+
+  #types .card {
+    width: 210px;
+    height: 210px;
+    margin-top: 30px;
+  }
+
+  #types .card-img {
+    /* height: 100px; */
+    margin-top: 20px;
+  }
+
+  #types p {
+    font-size: 10px;
+  }
+
+  #quote h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 25px 25px;
+    margin-left: 15px;
+    font-family: 'Marck Script', cursive;
+    margin-top: 30px;
+  }
+
+  #quote img {
+    width: 100%;
+    height: 300px;
+    /* margin-left: 10px; */
+  }
+
+
+  .image-div {
+    text-align: center;
+  }
+  #quote  .image-div img {
+    width: auto;
+    margin: 0;
+  }
+  .pop-heading h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .main-scroll-div {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+  }
+
+  .cover {
+    width: 90%;
+    height: 50%;
+  }
+
+  .scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: aquamarine;
+  }
+
+  .scroll-images::-webkit-scrollbar {
+    color: transparent;
+
+  }
+
+  .child {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+  }
+
+  .child-img {
+    width: 40%;
+    height: 100%;
+  }
+
+  .icon {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: orange;
+  }
+
+  .icon:hover {
+    color: black;
+  }
+
+  .about-dog {
+    background: url('images/pxfuel\ \(1\).jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(133, 110, 80);
+    color: black;
+    overflow: hidden;
+
+  }
+
+  .about-dog h1 {
+    font-size: 25px;
+  }
+
+  .about-dog h2 {
+    font-size: 20px;
+  }
+
+  .about-dog p {
+    font-size: 15px;
+  }
+
+  .homebtn {
+    border-color: #fb683c;
+
+    /* margin-left: 200px; */
+    /* padding: 2px 15px; */
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d8896b 74%);
+    color: white;
+  }
+
+  .contact-us {
+    background: url('https://img.freepik.com/premium-vector/cute-many-head-dog-animal-seamless-pattern-wallpaper-with-design-chocolate_561841-1229.jpg?w=2000')no-repeat;
+    background-attachment: fix;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: 400px;
+    overflow: hidden;
+  }
+
+  .contact-us h1 {
+    font-size: 25px;
+  }
+
+  .contact-us p {
+    font-size: 15px;
+  }
+
+  .service {
+    margin-top: 55px;
+
+  }
+
+  .inner {
+    background: url('https://i.pinimg.com/736x/aa/69/ab/aa69ab4b4ee23190e7c8a2fe6ef74658.jpg');
+    height: 150px;
+  }
+
+  .service h3 {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .service button {
+    border-color: #f0491f;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-left: 110px;
+    margin-top: 5px;
+
+  }
+
+  .service button a {
+    font-size: 10px;
+  }
+
+  .things {
+    margin-top: 40px;
+    /* margin-right: 150px; */
+
+  }
+
+  .things h1 {
+    text-align: center;
+    font-size: 20px;
+
+  }
+
+  .things-card .cards {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 100px;
+
+  }
+
+  .things .card {
+    width: 100%;margin: 0 auto;max-width: 280px;
+  }
+  .footer{
+    height: auto;
+  }
+  .footer ul{
+    padding-left: 0;
+  }
+  /* .things img{
+height: 100px;
+        }  */
+  .care {
+    background: url('https://images.hdqwalls.com/wallpapers/dog-minimalism-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* .footer{
+          margin-top: 45px;
+          background-color: rgb(223, 167, 146);
+          height: 250px;
+        line-height: 30px;
+        color: black;
+        font-size: 10px;
+        } */
+
+  .social li {
+    padding: 15px 10px;
+  }
+
+  .address {
+    margin-top: 20px;
+  }
+
+  .srch {
+    margin-top: 20px;
+
+  }
+
+  .srch form {
+    margin-top: 20px;
+  }
+
+  .srch #finalEmail {
+    padding: 0px 35px;
+    height: 25px;
+  }
+
+  .srch button {
+    height: 25px;
+    font-size: 12px;
+
+  }
+
+  .socials {
+    margin-top: 20px;
+
+  }
+
+  .socials i {
+    color: #fb683c;
+
+  }
+
+  .support {
+    margin-top: 20px;
+  }
+
+  .support a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    font-size: 12px;
+  }
+}
